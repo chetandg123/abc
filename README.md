@@ -7,10 +7,10 @@
  
 # Steps to install the google chrome
 
- - Open the terminal (Ctrl+Alt+t) in the ubuntu
- - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
- - sudo apt install ./google-chrome-stable_current_amd64.deb
- - Check chrome brower version using command -> google-chrome -version
+   Open the terminal (Ctrl+Alt+t) in the ubuntu
+   wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+   sudo apt install ./google-chrome-stable_current_amd64.deb
+   Check chrome brower version using command -> google-chrome -version
   	
 # Steps to Download the chrome driver 
 
@@ -21,10 +21,14 @@ Note: Based on the chrome browser version need to download chrome driver
 
  - Open the Terminal (Ctrl+Alt+t) in the ubuntu
  - Clone the cQubeTesting-3.5 project from github i.e git clone [repository url] 
- - sudo apt update
- - sudo apt install python3-pip
+     ```
+     sudo apt update
+     sudo apt install python3-pip
+     ```
  - Execute the Requirement.txt in the terminal (Requirement.txt file present in the cQubeTesting-3.5 Folder) [mandatory]
-	    sudo pip3 install -r Requirement.txt 
+     ```
+     sudo pip3 install -r Requirement.txt
+     ```
  - Fill the config.ini file (config.ini file present in the cQubeTesting-3.5 Folder).
  
 # Mandatory fields for installation and upgradation of backend configuration testing

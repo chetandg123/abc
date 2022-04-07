@@ -6,12 +6,12 @@
  - Chrome driver need to be downloaded and placed in the cQubeTesting-3.5/Driver/ folder.
  
 # Steps to install the google chrome
-
+   ```
    Open the terminal (Ctrl+Alt+t) in the ubuntu
    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
    sudo apt install ./google-chrome-stable_current_amd64.deb
    Check chrome brower version using command -> google-chrome -version
-  	
+  ```
 # Steps to Download the chrome driver 
 
 Note: Based on the chrome browser version need to download chrome driver 
@@ -20,7 +20,7 @@ Note: Based on the chrome browser version need to download chrome driver
 # Steps to execute the test script
 
  - Open the Terminal (Ctrl+Alt+t) in the ubuntu
- - Clone the cQubeTesting-3.5 project from github i.e git clone [repository url] 
+ - Clone the cQubeTesting-3.5 project from github i.e ``` git clone [repository url] ```
      ```
      sudo apt update
      sudo apt install python3-pip
@@ -32,7 +32,7 @@ Note: Based on the chrome browser version need to download chrome driver
  - Fill the config.ini file (config.ini file present in the cQubeTesting-3.5 Folder).
  
 # Mandatory fields for installation and upgradation of backend configuration testing
-		
+		```
 		    [config]
                     domain= #domain name provided in the config.yml file ex: https://domain_name
                     username= #username for cQube login
@@ -43,10 +43,10 @@ Note: Based on the chrome browser version need to download chrome driver
                     database= #db name which is provided in the config.yml file
                     user= #db user which is provided in the config.yml file
                     db_password= #db user which is provided in the config.yml file                    
-                    
+                 ``` 
 # Execution of automation testscripts for both installation and upgradation of backend configuration
 
- - python3 -m unittest TestSuites/cQubeBackendConfiguration/run_configuration.py
+ ``` python3 -m unittest TestSuites/cQubeBackendConfiguration/run_configuration.py ```
  
  
 # Mandatory fields for installation and upgradation of workflow
@@ -105,34 +105,35 @@ Note: Based on the chrome browser version need to download chrome driver
 # Mandatory fields for cQube UI application              
       
 ### Before running Regression and System test suites please fill the data_sources.ini file to run customized suite run
-
-			[data_source]		
-			#Implemented customized suite running - Enable or disable data source while running scripts [True or False] -
-			student=True
-			teacher=True
-			crc=True
-			composite=True
-			pat=True
-			sat=True
-			udise=True
-			telemetry=True
-			infrastructure=True
-			Diksha_ETB=True
-			Diksha_TPD=True			
+```
+[data_source]		
+#Implemented customized suite running - Enable or disable data source while running scripts [True or False] -
+student=True
+teacher=True
+crc=True
+composite=True
+pat=True
+sat=True
+udise=True
+telemetry=True
+infrastructure=True
+Diksha_ETB=True
+Diksha_TPD=True						
 		
-		          [config]
-		          domain= #Enter the url of the cqube application ex: https://<domain_name>/ or http://<ip>:4200
-		          username= #Enter the username of report viewer
-		          password= #Enter the password of report viewer
-		          admin_username = #Enter the admin user name
-		          admin_password = #Enter the admin password
-		          createadmin= #for creating new admin user provide name of admin
-		          adminpassword= # Enter password for new admin
-		          createviewer= #for creating new admin user provide name of reportviewer
-		          viewerpassword= # Enter password for new viewer
-		          createemission= #for creating new admin user provide name of emission user
-		          emissionpassword= # Enter password for new emission user
-	    
+[config]
+domain= #Enter the url of the cqube application ex: https://<domain_name>/ or http://<ip>:4200
+username= #Enter the username of report viewer
+password= #Enter the password of report viewer
+admin_username = #Enter the admin user name
+admin_password = #Enter the admin password
+createadmin= #for creating new admin user provide name of admin
+adminpassword= # Enter password for new admin
+createviewer= #for creating new admin user provide name of reportviewer
+viewerpassword= # Enter password for new viewer
+createemission= #for creating new admin user provide name of emission user
+emissionpassword= # Enter password for new emission user
+```
+
 # Navigate to cQubeTesting-3.5 Directory in the terminal (ex cd /home/ubuntu/cQubeTesting-3.5)
 ### Note : To Test admin console test suite. Need to connected with vpn 
 

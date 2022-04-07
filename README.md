@@ -2,7 +2,6 @@
 # cQube Release-3.5
 
 ###  Prerequisites:
- - To Run Selenium python scripts, Install pycharm in your system.
  - Google Chrome need to be installed in the server or local machine.
  - Chrome driver need to be downloaded and placed in the cQubeTesting-3.5/Driver/ folder.
  
@@ -31,9 +30,9 @@ Note: Based on the chrome browser version need to download chrome driver
 # Mandatory fields for installation and upgradation of backend configuration testing
 		
 		    [config]
-                    domain=
-                    username=
-                    password=
+                    domain= #domain name provided in the config.yml file ex: https://domain_name
+                    username= #username for cQube login
+                    password= #password for cQube login
                     basedirpath= #installation directory provided in the config.yml file ex:/opt
                     host=localhost
                     port=5432
@@ -69,8 +68,8 @@ Note: Based on the chrome browser version need to download chrome driver
 
                     
                     	[filepath]
-			
-			district_master= #Fill the absolute path ex: /home/ubuntu/district_mst.zip
+			#Fill the absolute path ex: /home/ubuntu/district_mst.zip
+			district_master= 
 			block_master=
 			cluster_master=
 			school_master=
@@ -98,7 +97,8 @@ Note: Based on the chrome browser version need to download chrome driver
 			semester_exam_qst_master=
 			semester_exam_result_trans=
                    
-#Mandatory fields for cQube UI application              
+
+# Mandatory fields for cQube UI application              
       
 ### Before running Regression and System test suites please fill the data_sources.ini file to run customized suite run
 
@@ -129,26 +129,27 @@ Note: Based on the chrome browser version need to download chrome driver
 		          createemission= #for creating new admin user provide name of emission user
 		          emissionpassword= # Enter password for new emission user
 	    
-#Navigate to cQubeTesting-3.5 Directory in the terminal (ex cd /home/ubuntu/cQubeTesting-3.5)
-Note : To Test admin console test suite. Need to connected with vpn 
- 		#For Regression:
+# Navigate to cQubeTesting-3.5 Directory in the terminal (ex cd /home/ubuntu/cQubeTesting-3.5)
+### Note : To Test admin console test suite. Need to connected with vpn 
+
+# For Regression:
                 python3 -m unittest TestSuites/Regression_suite/regression_map_reports.py
                 python3 -m unittest TestSuites/Regression_suite/regression_chart_table_reports.py
                 python3 -m unittest TestSuites/Regression_suite/regression_diksha_tpd_reports.py
                 python3 -m unittest TestSuites/Regression_suite/regression_exception_reports.py
                 python3 -m unittest Admin_console/admin_console_regression_testing.py
             
-	    	#For System Testing:
+# For System Testing:
                 python3 -m unittest TestSuites/System_testing_suite/system_testing_suite.py
                 python3 -m unittest TestSuites/System_testing_suite/system_suite_2.py
                 python3 -m unittest Admin_console/admin_console_system_testing.py
            
-	   	#For Smoke Testing:
+# For Smoke Testing:
 		python3 -m unittest TestSuites/SmokeTestSuite/smoke_test_map_reports.py
 		python3 -m unittest TestSuites/SmokeTestSuite/smoke_test_chart_table_reports.py
 		python3 -m unittest TestSuites/SmokeTestSuite/smoke_test_exception_reports.py
 		python3 -m unittest Admin_console/Admin_smoke_testsuit.py
 		
 
- After execution of scripts ,the report will be generated and present in Reports folder
+ ### After execution of scripts ,the report will be generated and present in Reports folder
 

@@ -137,23 +137,27 @@ emissionpassword= # Enter password for new emission user
 ### Note : To Test admin console test suite. Need to connected with vpn 
 
 - For Regression:
-                python3 -m unittest TestSuites/Regression_suite/regression_map_reports.py
-                python3 -m unittest TestSuites/Regression_suite/regression_chart_table_reports.py
-                python3 -m unittest TestSuites/Regression_suite/regression_diksha_tpd_reports.py
-                python3 -m unittest TestSuites/Regression_suite/regression_exception_reports.py
-                python3 -m unittest Admin_console/admin_console_regression_testing.py
+```
+python3 -m unittest TestSuites/Regression_suite/regression_map_reports.py
+python3 -m unittest TestSuites/Regression_suite/regression_chart_table_reports.py
+python3 -m unittest TestSuites/Regression_suite/regression_diksha_tpd_reports.py
+python3 -m unittest TestSuites/Regression_suite/regression_exception_reports.py
+python3 -m unittest Admin_console/admin_console_regression_testing.py
+```
             
 - For System Testing:
-                python3 -m unittest TestSuites/System_testing_suite/system_testing_suite.py
-                python3 -m unittest TestSuites/System_testing_suite/system_suite_2.py
-                python3 -m unittest Admin_console/admin_console_system_testing.py
-           
+```
+python3 -m unittest TestSuites/System_testing_suite/system_testing_suite.py
+python3 -m unittest TestSuites/System_testing_suite/system_suite_2.py
+python3 -m unittest Admin_console/admin_console_system_testing.py
+```           
 - For Smoke Testing:
-		python3 -m unittest TestSuites/SmokeTestSuite/smoke_test_map_reports.py
-		python3 -m unittest TestSuites/SmokeTestSuite/smoke_test_chart_table_reports.py
-		python3 -m unittest TestSuites/SmokeTestSuite/smoke_test_exception_reports.py
-		python3 -m unittest Admin_console/Admin_smoke_testsuit.py
-		
+```
+python3 -m unittest TestSuites/SmokeTestSuite/smoke_test_map_reports.py
+python3 -m unittest TestSuites/SmokeTestSuite/smoke_test_chart_table_reports.py
+python3 -m unittest TestSuites/SmokeTestSuite/smoke_test_exception_reports.py
+python3 -m unittest Admin_console/Admin_smoke_testsuit.py
+```		
 
  ### After execution of scripts ,the report will be generated and present in Reports folder
 

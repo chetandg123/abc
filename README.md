@@ -15,7 +15,7 @@
 # Steps to Download the chrome driver 
 
 Note: Based on the chrome browser version need to download chrome driver 
-   https://sites.google.com/a/chromium.org/chromedriver/downloads
+   https://sites.google.com/chromium.org/driver/
 
 # Steps to execute the test script
 
@@ -32,7 +32,7 @@ Note: Based on the chrome browser version need to download chrome driver
  - Fill the config.ini file (config.ini file present in the cQubeTesting-3.5 Folder).
  
 # Mandatory fields for installation and upgradation of backend configuration testing
-		```
+		
 		    [config]
                     domain= #domain name provided in the config.yml file ex: https://domain_name
                     username= #username for cQube login
@@ -43,7 +43,7 @@ Note: Based on the chrome browser version need to download chrome driver
                     database= #db name which is provided in the config.yml file
                     user= #db user which is provided in the config.yml file
                     db_password= #db user which is provided in the config.yml file                    
-                 ``` 
+                  
 # Execution of automation testscripts for both installation and upgradation of backend configuration
 
  ``` python3 -m unittest TestSuites/cQubeBackendConfiguration/run_configuration.py ```

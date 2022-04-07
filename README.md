@@ -32,18 +32,18 @@ Note: Based on the chrome browser version need to download chrome driver
  - Fill the config.ini file (config.ini file present in the cQubeTesting-3.5 Folder).
  
 # Mandatory fields for installation and upgradation of backend configuration testing
-		
-		    [config]
-                    domain= #domain name provided in the config.yml file ex: https://domain_name
-                    username= #username for cQube login
-                    password= #password for cQube login
-                    basedirpath= #installation directory provided in the config.yml file ex:/opt
-                    host=localhost
-                    port=5432
-                    database= #db name which is provided in the config.yml file
-                    user= #db user which is provided in the config.yml file
-                    db_password= #db user which is provided in the config.yml file                    
-                  
+```		
+[config]
+domain= #domain name provided in the config.yml file ex: https://domain_name
+username= #username for cQube login
+password= #password for cQube login
+basedirpath= #installation directory provided in the config.yml file ex:/opt
+host=localhost
+port=5432
+database= #db name which is provided in the config.yml file
+user= #db user which is provided in the config.yml file
+db_password= #db user which is provided in the config.yml file                  
+```                  
 # Execution of automation testscripts for both installation and upgradation of backend configuration
 
  ``` python3 -m unittest TestSuites/cQubeBackendConfiguration/run_configuration.py ```
@@ -136,19 +136,19 @@ emissionpassword= # Enter password for new emission user
 # Navigate to cQubeTesting-3.5 Directory in the terminal (ex cd /home/ubuntu/cQubeTesting-3.5)
 ### Note : To Test admin console test suite. Need to connected with vpn 
 
-# For Regression:
+- For Regression:
                 python3 -m unittest TestSuites/Regression_suite/regression_map_reports.py
                 python3 -m unittest TestSuites/Regression_suite/regression_chart_table_reports.py
                 python3 -m unittest TestSuites/Regression_suite/regression_diksha_tpd_reports.py
                 python3 -m unittest TestSuites/Regression_suite/regression_exception_reports.py
                 python3 -m unittest Admin_console/admin_console_regression_testing.py
             
-# For System Testing:
+- For System Testing:
                 python3 -m unittest TestSuites/System_testing_suite/system_testing_suite.py
                 python3 -m unittest TestSuites/System_testing_suite/system_suite_2.py
                 python3 -m unittest Admin_console/admin_console_system_testing.py
            
-# For Smoke Testing:
+- For Smoke Testing:
 		python3 -m unittest TestSuites/SmokeTestSuite/smoke_test_map_reports.py
 		python3 -m unittest TestSuites/SmokeTestSuite/smoke_test_chart_table_reports.py
 		python3 -m unittest TestSuites/SmokeTestSuite/smoke_test_exception_reports.py

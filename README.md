@@ -2,26 +2,30 @@
 # cQube Release-3.5
 
 ###  Prerequisites:
+ - Open Terminal
  - Google Chrome need to be installed in the server or local machine.
- - Chrome driver need to be downloaded and placed in the cQubeTesting-3.5/Driver/ folder.
- 
-# Steps to install the google chrome
-   ```
-   Open the terminal (Ctrl+Alt+t) in the ubuntu
+ # Steps to install the google chrome
+ ```
    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
    sudo apt install ./google-chrome-stable_current_amd64.deb
    Check chrome brower version using command -> google-chrome -version
   ```
-# Steps to Download the chrome driver 
+- Navigate to the directory where cQubeTesting has been downloaded or cloned 
+  ```
+  cd cQubeTesting/
+  git checkout cQubeTesting-3.5
+  git pull
+  ```
+ - Chrome driver need to be downloaded and placed in the cQubeTesting-3.5/Driver/ folder.
+ # Steps to Download the chrome driver 
 
-Note: Based on the chrome browser version need to download chrome driver 
+   Note: Based on the chrome browser version need to download chrome driver 
    https://sites.google.com/chromium.org/driver/
-
+ 
 # Steps to execute the test script
 
- - Open the Terminal (Ctrl+Alt+t) in the ubuntu
- - Clone the cQubeTesting-3.5 project from github i.e ``` git clone [repository url] ```
      ```
+     cd cQubeTesting/
      sudo apt update
      sudo apt install python3-pip
      ```
@@ -159,5 +163,5 @@ python3 -m unittest TestSuites/SmokeTestSuite/smoke_test_exception_reports.py
 python3 -m unittest Admin_console/Admin_smoke_testsuit.py
 ```		
 
- ### After execution of scripts ,the report will be generated and present in Reports folder
+ ### After execution of scripts,the report will be generated and present in Reports folder
 

@@ -51,57 +51,56 @@ Note: Based on the chrome browser version need to download chrome driver
  
 # Mandatory fields for installation and upgradation of workflow
 
-		        [config]
-                        domain= #domain name provided in the config.yml file ex: https://domain_name
-		
-                        [datasource]
-                        #Implemented customized suite running - Enable or disable data source while running scripts [true or false] 
-			nifi_static= true
-			nifi_crc= true
-			nifi_attendance= true
-			nifi_infra= true
-			nifi_diksha= true
-			nifi_telemetry= true
-			nifi_udise= true
-			nifi_pat= true
-			nifi_composite= true
-			nifi_progresscard= true
-			nifi_teacher_attendance= true
-			nifi_data_replay= true
-			nifi_sat= true
+```
+[config]
+domain= #domain name provided in the config.yml file ex: https://domain_name
 
-                    
-                    	[filepath]
-			#Fill the absolute path ex: /home/ubuntu/district_mst.zip
-			district_master= 
-			block_master=
-			cluster_master=
-			school_master=
-			school_management=
+[datasource]
+#Implemented customized suite running - Enable or disable data source while running scripts [true or false]
+nifi_static= true
+nifi_crc= true
+nifi_attendance= true
+nifi_infra= true
+nifi_diksha= true
+nifi_telemetry= true
+nifi_udise= true
+nifi_pat= true
+nifi_composite= true
+nifi_progresscard= true
+nifi_teacher_attendance= true
+nifi_data_replay= true
+nifi_sat= true
 
-			inspection_master=
-			user_location_master=
+[filepath]
+#Fill the absolute path ex: /home/ubuntu/district_mst.zip
+district_master=
+block_master=
+cluster_master=
+school_master=
+school_management=
 
-			infra_trans=
+inspection_master=
+user_location_master=
 
-			student_attendance=
-			teacher_attendance=
+infra_trans=
 
-			udise=
+student_attendance=
+teacher_attendance=
 
-			periodic_exam_grade_details=
-			periodic_exam_subject_details=
-			periodic_exam_master=
-			periodic_exam_qst_master=
-			periodic_exam_result_trans=
+udise=
 
-			semester_exam_grade_details=
-			semester_exam_subject_details=
-			semester_exam_master=
-			semester_exam_qst_master=
-			semester_exam_result_trans=
-                   
+periodic_exam_grade_details=
+periodic_exam_subject_details=
+periodic_exam_master=
+periodic_exam_qst_master=
+periodic_exam_result_trans=
 
+semester_exam_grade_details=
+semester_exam_subject_details=
+semester_exam_master=
+semester_exam_qst_master=
+semester_exam_result_trans=
+```             
 # Mandatory fields for cQube UI application              
       
 ### Before running Regression and System test suites please fill the data_sources.ini file to run customized suite run

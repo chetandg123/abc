@@ -4,7 +4,7 @@
 ###  Prerequisites:
  - Open Terminal
  - Google Chrome need to be installed in the server or local machine.
- # Steps to install the google chrome
+ - Steps to install the google chrome
  ```
    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
    sudo apt install ./google-chrome-stable_current_amd64.deb
@@ -24,11 +24,11 @@
  
 # Steps to execute the test script
 
-     ```
+    
      cd cQubeTesting/
      sudo apt update
      sudo apt install python3-pip
-     ```
+    
  - Execute the Requirement.txt in the terminal (Requirement.txt file present in the cQubeTesting-3.5 Folder) [mandatory]
      ```
      sudo pip3 install -r Requirement.txt

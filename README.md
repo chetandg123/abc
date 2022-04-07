@@ -30,7 +30,7 @@ Note: Based on the chrome browser version need to download chrome driver
  
 # Mandatory fields for installation and upgradation of backend configuration testing
 		
-		[config]
+		    [config]
                     domain=
                     username=
                     password=
@@ -48,11 +48,11 @@ Note: Based on the chrome browser version need to download chrome driver
  
 # Mandatory fields for installation and upgradation of workflow
 
-		    [config]
-                       domain= #domain name provided in the config.yml file ex: https://domain_name
+		        [config]
+                        domain= #domain name provided in the config.yml file ex: https://domain_name
 		
-                    [datasource]
-                    #Implemented customized suite running - Enable or disable data source while running scripts [true or false] 
+                        [datasource]
+                        #Implemented customized suite running - Enable or disable data source while running scripts [true or false] 
 			nifi_static= true
 			nifi_crc= true
 			nifi_attendance= true
@@ -69,7 +69,8 @@ Note: Based on the chrome browser version need to download chrome driver
 
                     
                     	[filepath]
-			district_master=
+			
+			district_master= #Fill the absolute path ex: /home/ubuntu/district_mst.zip
 			block_master=
 			cluster_master=
 			school_master=

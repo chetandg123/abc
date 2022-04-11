@@ -2,7 +2,7 @@
 # cQube Release-3.5
 
 ###  Prerequisites:
- - Open Terminal
+ - Open the Terminal
  - Google Chrome need to be installed in the server or local machine.
  - Steps to install the google chrome
  ```

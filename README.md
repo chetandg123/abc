@@ -53,7 +53,7 @@ db_password= #db user which is provided in the config.yml file
  ``` python3 -m unittest TestSuites/cQubeBackendConfiguration/run_configuration.py ```
  
  
-# Mandatory fields for installation and upgradation of workflow
+# Mandatory fields for installation and upgradation of Data Processing
 
 ```
 [config]
@@ -105,7 +105,7 @@ semester_exam_master=
 semester_exam_qst_master=
 semester_exam_result_trans=
 ```             
-# Execution of automation testscripts for Data Processing
+# Execution of automation testscripts for both installation and upgradation of Data Processing
 
  ``` python3 -m unittest TestSuites/cQubeBackendConfiguration/run_workflow.py ```
  

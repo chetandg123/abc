@@ -166,5 +166,5 @@ python3 -m unittest TestSuites/SmokeTestSuite/smoke_test_exception_reports.py
 python3 -m unittest Admin_console/Admin_smoke_testsuit.py
 ```		
 
- ### After execution of scripts,the report will be generated and present in Reports folder
+ ### Note : After execution of scripts,the report will be generated and present in the Reports folder
 

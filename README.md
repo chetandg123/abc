@@ -105,8 +105,11 @@ semester_exam_master=
 semester_exam_qst_master=
 semester_exam_result_trans=
 ```             
-# Mandatory fields for cQube UI application              
-      
+# Execution of automation testscripts for Data Processing
+
+ ``` python3 -m unittest TestSuites/cQubeBackendConfiguration/run_workflow.py ```
+ 
+# Mandatory fields for cQube UI application                    
 ### Before running Regression and System test suites please fill the data_sources.ini file to run customized suite run
 ```
 [data_source]		

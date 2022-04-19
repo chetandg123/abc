@@ -29,7 +29,7 @@
      sudo apt update
      sudo apt install python3-pip
     
- - Execute the Requirement.txt in the terminal (Requirement.txt file present in the cQubeTesting-3.5 Folder) [mandatory]
+ - Execute the Requirement.txt in the terminal (Requirement.txt file is present in the cQubeTesting-3.5 Folder) [mandatory]
      ```
      sudo pip3 install -r Requirement.txt
      ```
